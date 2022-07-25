@@ -78,3 +78,4 @@ result = linear_est.evaluate(eval_input_fn)
 clear_output()
 #printing the accuracy of the model
 print(result['accuracy'])
+print(result)
