@@ -77,5 +77,11 @@ result = linear_est.evaluate(eval_input_fn)
 #clear the console output
 clear_output()
 #printing the accuracy of the model
-print(result['accuracy'])
-print(result)
+#print(result['accuracy'])
+#print(result)
+
+#predicting 
+result = list(linear_est.predict(eval_input_fn))
+print(dfeval.loc[0])
+print(y_eval.loc[0])
+print(result[0]['probabilities'][1])
